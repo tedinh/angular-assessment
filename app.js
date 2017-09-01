@@ -17,7 +17,13 @@ angular.module('shop', ['ui.router'])
     templateUrl: './views/blog.html'
   })
   .state('shop', {
+    url: '/shop',
     templateUrl: './views/shop.html',
     controller: 'shopCtrl'
+  })
+  .state('product-details', {
+      url: '/product-details/:id',
+      templateUrl: './views/product-details.html',
+      controller: 'productDetailsCtrl'
   })
 })
